@@ -22,13 +22,13 @@ import (
 
 // nonwaiting represents the set of goroutine statuses that do not indicate waiting.
 var nonwaiting = map[string]struct{}{
-	"idle":      struct{}{},
-	"runnable":  struct{}{},
-	"running":   struct{}{},
-	"syscall":   struct{}{},
-	"dead":      struct{}{},
-	"enqueue":   struct{}{},
-	"copystack": struct{}{},
+	"idle":      {},
+	"runnable":  {},
+	"running":   {},
+	"syscall":   {},
+	"dead":      {},
+	"enqueue":   {},
+	"copystack": {},
 }
 
 type waitpoint struct {
